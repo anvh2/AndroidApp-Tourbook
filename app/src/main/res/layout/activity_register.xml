@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:weightSum="9"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+    </LinearLayout>
+    <LinearLayout
+            android:gravity="center"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        <EditText
+                android:id="@+id/edt_fullname"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:hint="Fullname *"/>
+        <EditText
+                android:id="@+id/edt_email"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:hint="Email *"/>
+        <EditText
+                android:id="@+id/edt_username"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:hint="Username *"/>
+        <EditText
+                android:id="@+id/edt_password"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:hint="Password *"/>
+        <EditText
+                android:id="@+id/edt_confirm"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="textPassword"
+                android:hint="Confirm *"/>
+        <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbtn_character"
+                android:orientation="horizontal">
+            <TextView
+                    android:textColor="#212121"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender *: "/>
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:id="@+id/rbtn_male"
+                    android:checked="true"/>
+
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:id="@+id/rbtn_female"
+                    android:checked="false"/>
+            <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:id="@+id/rbtn_other"
+                    android:checked="false"/>
+        </RadioGroup>
+
+        <EditText
+                android:id="@+id/edt_birthday"
+                android:layout_height="50dp"
+                android:layout_width="300dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:hint="Birthday *"/>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <Button
+                android:layout_width="180dp"
+                android:text="Sign Up"
+                android:id="@+id/btn_register"
+                android:layout_height="wrap_content" />
+        <Button
+                android:layout_width="wrap_content"
+                android:text="Cancle"
+                android:id="@+id/btn_cancle"
+                android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>
