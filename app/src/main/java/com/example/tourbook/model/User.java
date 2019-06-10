@@ -15,4 +15,14 @@ public class User implements Serializable {
     private String password;
     private String gender;
     private String birthday;
+
+    public User(int id, String fullName, String email, String username, String password, String gender, String birthday){
+        this.id = id;
+        this.fullName = fullName;
+        this.email = email;
+        this.username = username;
+        this.password = password;
+        this.gender = gender;
+        this.birthday = birthday;
+    }
 }

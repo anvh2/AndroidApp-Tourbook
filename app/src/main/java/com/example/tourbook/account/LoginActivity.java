@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.example.tourbook.MainActivity;
 import com.example.tourbook.R;
 import com.example.tourbook.utils.DataAccess;
+import com.example.tourbook.utils.Utils;
 
 public class LoginActivity extends AppCompatActivity {
     private Button login;
@@ -21,6 +22,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //DataAccess.getUserData(this, "");
 
         init();
 
@@ -33,7 +36,7 @@ public class LoginActivity extends AppCompatActivity {
                 if (username.length() == 0 || password.length() == 0) {
                     dialog.setMessage("Please type username and password").show();
                 } else {
-                    if (DataAccess.verifyUser(username.getText().toString(), password.getText().toString())){
+                    if (Utils.verifyUser(LoginActivity.this, username.getText().toString(), password.getText().toString())){
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));
                     } else {
                         dialog.setMessage("Your user name and password is incorrect").show();

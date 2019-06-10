@@ -1,5 +1,6 @@
 package com.example.tourbook;
 
+import android.content.ClipData;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,7 +82,9 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_profile) {
-            // Handle the camera action
+
+        } else if (id == R.id.nav_newsfeed) {
+
         } else if (id == R.id.nav_post) {
 
         } else if (id == R.id.nav_map) {
