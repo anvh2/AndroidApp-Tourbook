@@ -27,6 +27,9 @@
         <activity android:name=".account.RegisterActivity"
                   android:label="@string/app_name"
                   android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".activity.WritePostActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

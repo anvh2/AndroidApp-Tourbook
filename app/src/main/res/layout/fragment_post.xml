@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context=".fragment.PostFragment"
+              android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"/>
+
+    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@drawable/side_nav_bar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+
+        <ImageView
+                android:layout_width="73dp"
+                android:layout_height="56dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                android:src="@drawable/ic_account_circle"
+                android:contentDescription="@string/nav_header_desc"
+                android:id="@+id/imgv_avatart"
+                tools:ignore="VectorDrawableCompat"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:orientation="horizontal">
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:id="@+id/tv_fullname"
+                        android:text="Hoàng An"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+
+                <Spinner
+                        android:id="@+id/sp_mode"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"
+                        android:spinnerMode="dropdown"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Write here..."
+        />
+        <EditText
+                android:layout_margin="10dp"
+                android:background="#e4e2e2"
+                android:gravity="left|top"
+                android:id="@+id/edt_content"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

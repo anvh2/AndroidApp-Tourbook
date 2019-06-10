@@ -1,12 +1,9 @@
-package com.example.tourbook.modle;
+package com.example.tourbook.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import org.json.JSONObject;
 
 import java.io.Serializable;
 
-@Getter
-@Setter
 public class User implements Serializable {
     private int id;
     private String fullName;
@@ -24,5 +21,21 @@ public class User implements Serializable {
         this.password = password;
         this.gender = gender;
         this.birthday = birthday;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public String getEmail() {
+        return email;
     }
 }
