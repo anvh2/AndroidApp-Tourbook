@@ -9,9 +9,9 @@
         android:title="Diary"
         app:showAsAction="always" />
     <item
-        android:id="@+id/nav_report"
-        android:icon="@drawable/ic_edit_profile"
-        android:title="Edit"
-        app:showAsAction="always"></item>
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_edit_profile"
+            android:title="Edit"
+            app:showAsAction="always"/>
 
 </menu>
