@@ -1,17 +1,14 @@
-//package com.example.tourbook.model;
-//
-//import lombok.Getter;
-//import lombok.Setter;
-//
-//import java.io.Serializable;
-//
-//@Getter
-//@Setter
-//public class Post implements Serializable {
-//    private int id;
-//    private String title;
-//    private String description;
-//    private String content;
-//    private String mode;
-//    private String place;
-//}
+package com.example.tourbook.model;
+
+
+
+import java.io.Serializable;
+
+public class Post implements Serializable {
+    private int id;
+    private String title;
+    private String description;
+    private String content;
+    private String mode;
+    private String place;
+}

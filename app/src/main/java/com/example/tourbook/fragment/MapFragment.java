@@ -1,4 +1,6 @@
 package com.example.tourbook.fragment;
 
-public class MapFragment {
+import android.support.v4.app.Fragment;
+
+public class MapFragment extends Fragment {
 }

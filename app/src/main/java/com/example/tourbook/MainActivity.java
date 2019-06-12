@@ -13,8 +13,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.example.tourbook.fragment.PostFragment;
-import com.example.tourbook.fragment.ProfileFragment;
+import com.example.tourbook.fragment.*;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -92,19 +91,19 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_profile) {
             fragment = new ProfileFragment();
         } else if (id == R.id.nav_newsfeed) {
-
+            fragment = new NewsFeedFragment();
         } else if (id == R.id.nav_post) {
             fragment = new PostFragment();
         } else if (id == R.id.nav_map) {
-
+            fragment = new MapFragment();
         } else if (id == R.id.nav_settings) {
-
+            fragment = new SettingsFragment();
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
         } else if (id == R.id.nav_logout) {
-
+            this.finish();
         }
 
         if (fragment != null) {
